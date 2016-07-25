@@ -453,5 +453,4 @@ var articles = [];
 
 };
 
-}
 
