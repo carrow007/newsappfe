@@ -438,7 +438,7 @@ var articles = [];
 
 });
 
-<<<<<<< HEAD
+
 //     document.getElementById('viewButton').addEventListener('click', function(){
 //       $.ajax({
 //         url: url + '/articles',
@@ -452,6 +452,6 @@ var articles = [];
 //       });
 
 };
-=======
+
 }
->>>>>>> gh-pages
+
