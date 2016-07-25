@@ -7,7 +7,8 @@ var viewALl      = document.getElementById('view-all');
 var deleteFavs   = document.getElementById('delete-favs');
 var chosenDropDown = document.getElementById('dropdown');
 
-var url = 'http://localhost:3000';
+// var url = 'http://localhost/3000';
+var url = "https://ancient-dawn-48506.herokuapp.com/";
 var articles = [];
 
 
