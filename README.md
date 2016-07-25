@@ -14,7 +14,10 @@ Similar to the "wander App" I would like to display the information in cards on 
 
 API used: newsAPI.org
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> gh-pages
 I had some pretty lofty goals going into this however I struggled a lot more with the backend and because of the time spent on trying to get that to work I was not able to deploy the app that I really wanted to deploy. If I could redo this project I would first focus on 3-4 news outlets to have a lot less code to keep track of and then expand to the full scope that they had once I figured it out with a couple of them.
 
 The specs that I wanted for this app were:
