@@ -437,7 +437,7 @@ var articles = [];
 
 });
 
-//     document.getElementById('viewButton').addEventListener('click', function(){
+//     document.getElementById('viewButtonx').addEventListener('click', function(){
 //       $.ajax({
 //         url: url + '/articles',
 //         dataType: 'json'
