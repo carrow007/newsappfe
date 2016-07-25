@@ -296,140 +296,140 @@ var articles = [];
 
     var sourcePicked = document.querySelector("#dropdown").value;
     if(sourcePicked == "bbcnews") {
-      $.post('http://localhost:80/articles', articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles', articles, function(response) {
     console.log(response);
       }).done(function(data){
         console.log(data);
       });
 
     } else if (sourcePicked == "bbcsport") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
     } else if (sourcePicked == "") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "bloomberg") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "buzzfeed") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "cnbc") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "cnn") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "espn") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "googlenews") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "hackernews") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "independent") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "mashable") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "recode") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "redditrall") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "reuters") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "techcrunch") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "theguardianuk") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "thehuffingtonpost") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "thenewyorktimes") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "thenextweb") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "theverge") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "thewallstreetjournal") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
       });
       } else if (sourcePicked == "thewashingtonpost") {
-      $.post('http://localhost:80/articles',  articles, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
     console.log(response);
       }).done(function(data) {
         console.log(data);
