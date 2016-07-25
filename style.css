@@ -1,0 +1,105 @@
+#head {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 50px;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body {
+  background-image: url('http://kaba35.com/wp-content/uploads/2015/11/Savin-NY-Website-Background-Web.jpg');
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 30px;
+  background-color: white;
+  padding: 5px;
+  height: 50px;
+  line-height: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.news-radio {
+margin-right: 10px;
+font-weight: bold;
+}
+
+#goButton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  height: 45px;
+  width: 100px;
+  margin-left: 25px;
+  line-height: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#newsContainer {
+  margin: 0 auto;
+  height: 2400px;
+  width: 1300px;
+  /*border: 2px solid blue;*/
+}
+
+.newsCardsC {
+  margin: 0 auto;
+  height: 200px;
+  width: 1000px;
+  border: 1px solid rgba(235, 208, 208, 0.8);
+  border-radius: 15px;
+  background-color: rgba(235, 208, 208, 0.9);
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.authorC, .descriptionC, .titleC, .urlC {
+  text-align: center;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+
+.picture {
+  margin: 0 auto;
+  height: 100px;
+  width: 110px;
+  border-radius: 5px;
+
+}
+
+#favesButton {
+ -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  height: 45px;
+  width: 100px;
+  margin-left: 25px;
+  line-height: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
