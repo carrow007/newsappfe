@@ -437,16 +437,4 @@ var articles = [];
 
 });
 
-//     document.getElementById('viewButtonx').addEventListener('click', function(){
-//       $.ajax({
-//         url: url + '/articles',
-//         dataType: 'json'
-//       }).done(function(response){
-//         console.log("response: ", response);
-
-//         var favesList = document.getElementById('faves-list');
-//         for (var i = 0; i < response.length; i++) {
-
-//       });
-
-// };
+}
