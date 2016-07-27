@@ -128,3 +128,9 @@ font-weight: bold;
   width: 1300px;
   border: 2px solid blue;
 }
+
+.favesChecked {
+  margin: 0 auto;
+  height: 15px;
+  width: 15px;
+}
