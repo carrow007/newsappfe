@@ -470,7 +470,7 @@ var articles = [];
             };
 
        $.ajax({
-         url: url + 'articles/:author',
+         url: url + 'articles/:_id',
          dataType: 'json',
          data: data,
          method: 'delete'
