@@ -465,7 +465,7 @@ var articles = [];
               var aTag = document.createElement('a');
               aTag.innerHTML = response[i].url;
               aTag.setAttribute("href", response[i].url);
-              var faveText = response[i].url;
+              var faveText = response[i]._id;
               faveDiv.appendChild(document.createTextNode(faveText));
               faveDiv.appendChild(aTag);
               favorites.appendChild(faveDiv);
@@ -480,7 +480,7 @@ var articles = [];
 
         var deleteById = document.getElementById('deleteById').value.toLowerCase();
         var articles = {
-
+          id: deleteById
             };
 
        $.ajax({
