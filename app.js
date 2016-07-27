@@ -308,7 +308,7 @@ var articles = [];
         console.log(data);
       });
 
-    }
+    })
 
     // } else if (sourcePicked == "bbcsport") {
     //   $.post('https://ancient-dawn-48506.herokuapp.com/articles',  articles, function(response) {
