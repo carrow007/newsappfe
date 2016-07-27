@@ -53,14 +53,16 @@ var articles = [];
           urlToImageDiv.innerHTML = urlToImageText
           newsCards.appendChild(urlToImageDiv);
 
+          // var favButton = document.createElement('button');
+          // favButton.className = 'favButton1'
+          // $(favesButton).addEventListener('click', function({
+
+          // }))
+
+
+
 
           newsContent.appendChild(newsCards)
-
-          //faves
-          articleAddToFaves = articlesArr.url
-
-          }
-        }
 
 
 
@@ -294,6 +296,10 @@ var articles = [];
   $(favorite).on("click", function() {  // this saves the article selection
     event.preventDefault();
 
+    // var data = {
+    //   link: faveLink
+    // }
+
     var sourcePicked = document.querySelector("#dropdown").value;
     if(sourcePicked == "bbcnews") {
       $.post('https://ancient-dawn-48506.herokuapp.com/articles', articles, function(response) {
@@ -452,7 +458,7 @@ var articles = [];
         var favorites = document.getElementById('favorites');
 
             for (var i = 0; i < response.length; i++) {
-              var faveText = response[i]._id;
+              var faveText = response[i];
               var faveDiv = document.createElement('div');
               faveDiv.appendChild(document.createTextNode(faveText));
               favorites.appendChild(faveDiv);
