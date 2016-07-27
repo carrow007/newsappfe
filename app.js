@@ -53,9 +53,9 @@ var articles = [];
           urlToImageDiv.innerHTML = urlToImageText
           newsCards.appendChild(urlToImageDiv);
 
-          var checkBox = document.createElement('input')
-          checkBox.setAttribute("type", "checkbox")
-          checkBox.className = 'faveschecked';
+          var checkBox = document.createElement('input');
+          checkBox.type= "checkbox";
+          checkBox.className = 'favesChecked';
           checkBox.value = articlesArr[i].url;
           newsCards.appendChild(checkBox)
 
@@ -301,7 +301,7 @@ var articles = [];
     //   link: faveLink
     // }
 
-    var sourcePicked = document.querySelector(".faveschecked:checked").value;
+    var sourcePicked = document.querySelector(".favesChecked:checked").value;
     console.log(sourcePicked)
       $.post('https://ancient-dawn-48506.herokuapp.com/articles', sourcePiced, function(response) {
     console.log(response);
