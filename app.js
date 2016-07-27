@@ -301,7 +301,7 @@ var articles = [];
     //   link: faveLink
     // }
 
-    var sourcePicked = document.querySelector(".favesChecked:checked").value;
+    var sourcePicked = {url: document.querySelector(".favesChecked:checked").value};
     console.log(sourcePicked)
       $.post('https://ancient-dawn-48506.herokuapp.com/articles', sourcePicked, function(response) {
     console.log(response);
