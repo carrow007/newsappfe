@@ -441,6 +441,7 @@ var articles = [];
 
     // seeing all the favorites
     document.getElementById('viewAll').addEventListener('click', function() {
+      event.preventDefault();
 
      $.ajax({
        url: url + '/articles',
@@ -460,6 +461,8 @@ var articles = [];
      });
 
       document.getElementById('deleteBtn').addEventListener('click', function() {
+        event.preventDefault();
+
         var deleteAuthor = document.getElementById('delete-author').value.toLowerCase();
         console.log("deleting: ", deleteName);
         var articles = {
