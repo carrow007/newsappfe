@@ -475,7 +475,7 @@ var articles = [];
          // data: data,
          method: 'delete'
        }).done(function(response){
-         console.log(deleteName + " has been deleted.");
+         console.log(deleteById + " has been deleted.");
        });
     });
   };
