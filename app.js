@@ -303,7 +303,7 @@ var articles = [];
 
     var sourcePicked = document.querySelector(".favesChecked:checked").value;
     console.log(sourcePicked)
-      $.post('https://ancient-dawn-48506.herokuapp.com/articles', sourcePiced, function(response) {
+      $.post('https://ancient-dawn-48506.herokuapp.com/articles', sourcePicked, function(response) {
     console.log(response);
       }).done(function(data){
         console.log(data);
