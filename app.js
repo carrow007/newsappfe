@@ -451,8 +451,8 @@ var articles = [];
 
         var favorites = document.getElementById('favorites');
 
-            for (var i = 0; i < response.length; i++) {
-              var faveText = response[i].title;
+            for (var i = 0; i < articlesArr.response.length; i++) {
+              var faveText = articlesArr.response[i].title;
               var faveDiv = document.createElement('div');
               faveDiv.appendChild(document.createTextNode(faveText));
               favorites.appendChild(faveDiv);
