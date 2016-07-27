@@ -63,7 +63,8 @@ var articles = [];
 
 
           newsContent.appendChild(newsCards)
-
+        }
+}
 
 
 //// clicking
