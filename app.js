@@ -464,13 +464,13 @@ var articles = [];
       document.getElementById('deleteBtn').addEventListener('click', function() {
         event.preventDefault();
 
-        var deleteById = document.getElementById('delete-by-id').value.toLowerCase();
+        var deleteById = document.getElementById('deleteById').value.toLowerCase();
         var articles = {
 
             };
 
        $.ajax({
-         url: url + 'articles/:_id',
+         url: url + 'articles/',
          dataType: 'json',
          data: data,
          method: 'delete'
