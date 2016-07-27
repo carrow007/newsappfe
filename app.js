@@ -464,10 +464,11 @@ var articles = [];
               var aTag = document.createElement('a');
               aTag.href = response[i].url;
               var faveText = response[i].url;
-              faveDiv.appendChild(aTag)
               var faveDiv = document.createElement('div');
               faveDiv.appendChild(document.createTextNode(faveText));
+              faveDiv.appendChild(aTag)
               favorites.appendChild(faveDiv);
+
 
              }
          })
