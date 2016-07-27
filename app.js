@@ -456,6 +456,7 @@ var articles = [];
               var faveDiv = document.createElement('div');
               faveDiv.appendChild(document.createTextNode(faveText));
               favorites.appendChild(faveDiv);
+
              }
          })
      });

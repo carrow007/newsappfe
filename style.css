@@ -122,3 +122,9 @@ font-weight: bold;
   display: inline-block;
 }
 
+#favorites {
+  margin: 0 auto;
+  height: 2400px;
+  width: 1300px;
+  border: 2px solid blue;
+}
