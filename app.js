@@ -53,7 +53,8 @@ var articles = [];
           urlToImageDiv.innerHTML = urlToImageText
           newsCards.appendChild(urlToImageDiv);
 
-          var checkBox = document.createElement('input').setAttribute("type", "checkbox")
+          var checkBox = document.createElement('input')
+          checkBox.setAttribute("type", "checkbox")
           checkBox.className = 'faveschecked';
           checkBox.value = articlesArr[i].url;
           newsCards.appendChild(checkBox)
