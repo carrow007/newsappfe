@@ -444,7 +444,7 @@ var articles = [];
       event.preventDefault();
 
      $.ajax({
-       url: url + '/articles',
+       url: url + 'articles',
        dataType: 'json'
        }).done(function(response){
       console.log('response', response);
@@ -469,7 +469,7 @@ var articles = [];
           author: deleteAuthor
             };
        $.ajax({
-         url: url + '/articles/:author' + deleteAuthor,
+         url: url + 'articles/:author' + deleteAuthor,
          dataType: 'json',
          data: data,
          method: 'delete'
