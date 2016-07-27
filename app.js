@@ -440,7 +440,7 @@ var articles = [];
 
 
     // seeing all the favorites
-    $(viewAll).on("click", function(){
+    document.getElementById('viewAll').addEventListener('click', function) {
 
      $.ajax({
        url: url + '/articles',
@@ -459,7 +459,7 @@ var articles = [];
          })
      });
 
-      $(deleteBtn).on('click', function() {
+      document.getElementById('deleteBtn').addEventListener('click', function) {
         var deleteAuthor = document.getElementById('delete-author').value.toLowerCase();
         console.log("deleting: ", deleteName);
         var articles = {
