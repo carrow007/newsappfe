@@ -452,7 +452,7 @@ var articles = [];
         var favorites = document.getElementById('favorites');
 
             for (var i = 0; i < response.length; i++) {
-              var faveText = response[i].articles._id;
+              var faveText = response[i]._id.articles;
               var faveDiv = document.createElement('div');
               faveDiv.appendChild(document.createTextNode(faveText));
               favorites.appendChild(faveDiv);
