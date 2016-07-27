@@ -472,7 +472,7 @@ var articles = [];
        $.ajax({
          url: url + 'articles/',
          dataType: 'json',
-         data: data,
+         // data: data,
          method: 'delete'
        }).done(function(response){
          console.log(deleteName + " has been deleted.");
