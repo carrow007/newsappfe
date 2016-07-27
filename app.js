@@ -434,24 +434,46 @@ var articles = [];
       }).done(function(data) {
         console.log(data);
       });
-      };
+    };
 
 });
 
 
-//     document.getElementById('viewButton').addEventListener('click', function(){
-//       $.ajax({
-//         url: url + '/articles',
-//         dataType: 'json'
-//       }).done(function(response){
-//         console.log("response: ", response);
+    // seeing all the favorites
+    $(viewAll).on("click", function(){
 
-//         var favesList = document.getElementById('faves-list');
-//         for (var i = 0; i < response.length; i++) {
+     $.ajax({
+       url: url + '/articles',
+       dataType: 'json'
+       }).done(function(response){
+      console.log('response', response);
 
-//       });
+        var favorites = document.getElementById('favorites');
 
+            for (var i = 0; i < response.length; i++) {
+              var faveText = response[i].name;
+              var faveDiv = document.createElement('div');
+              faveDiv.appendChild(document.createTextNode(faveText));
+              favorites.appendChild(faveDiv);
+             }
+         })
+     });
+
+      $(deleteBtn).on('click', function() {
+        var deleteAuthor = document.getElementById('delete-author').value.toLowerCase();
+        console.log("deleting: ", deleteName);
+        var articles = {
+          author: deleteAuthor
+            };
+       $.ajax({
+         url: url + '/articles/:author' + deleteAuthor,
+         dataType: 'json',
+         data: data,
+         method: 'delete'
+       }).done(function(response){
+         console.log(deleteName + " has been deleted.");
+       });
+    });
 };
-
 
 
