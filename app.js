@@ -463,7 +463,8 @@ var articles = [];
             for (var i = 0; i < response.length; i++) {
               var faveDiv = document.createElement('div');
               var aTag = document.createElement('a');
-              aTag.href = response[i].url;
+              aTag.innerHTML = response[i].url;
+              aTag.setAttribute("href", response[i].url);
               var faveText = response[i].url;
               faveDiv.appendChild(document.createTextNode(faveText));
               faveDiv.appendChild(aTag);
