@@ -452,7 +452,7 @@ var articles = [];
         var favorites = document.getElementById('favorites');
 
             for (var i = 0; i < response.length; i++) {
-              var faveText = response[i].name;
+              var faveText = response[i].title;
               var faveDiv = document.createElement('div');
               faveDiv.appendChild(document.createTextNode(faveText));
               favorites.appendChild(faveDiv);
@@ -464,13 +464,12 @@ var articles = [];
       document.getElementById('deleteBtn').addEventListener('click', function() {
         event.preventDefault();
 
-        var deleteAuthor = document.getElementById('delete-author').value.toLowerCase();
-        console.log("deleting: ", deleteName);
+        var deleteById = document.getElementById('delete-by-id').value.toLowerCase();
         var articles = {
-          author: deleteAuthor
+
             };
        $.ajax({
-         url: url + 'articles/:author' + deleteAuthor,
+         url: url + 'articles/:author',
          dataType: 'json',
          data: data,
          method: 'delete'
@@ -478,6 +477,6 @@ var articles = [];
          console.log(deleteName + " has been deleted.");
        });
     });
-};
+  };
 
 
