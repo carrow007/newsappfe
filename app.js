@@ -468,6 +468,7 @@ var articles = [];
         var articles = {
 
             };
+
        $.ajax({
          url: url + 'articles/:author',
          dataType: 'json',
