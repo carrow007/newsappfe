@@ -452,7 +452,7 @@ var articles = [];
         var favorites = document.getElementById('favorites');
 
             for (var i = 0; i < response.length; i++) {
-              var faveText = response[i]._id;
+              var faveText = response[i].articles._id;
               var faveDiv = document.createElement('div');
               faveDiv.appendChild(document.createTextNode(faveText));
               favorites.appendChild(faveDiv);
@@ -470,9 +470,9 @@ var articles = [];
             };
 
        $.ajax({
-         url: url + 'articles/',
+         url: url + 'articles',
          dataType: 'json',
-         // data: data,
+         data: articles,
          method: 'delete'
        }).done(function(response){
          console.log(deleteById + " has been deleted.");
